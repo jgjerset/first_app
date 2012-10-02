@@ -1,5 +1,9 @@
 #!/bin/sh
-git add .
-git commit -m "add testing"
-git push
-cap deploy
+if [ "$1" = "" ]; then
+	echo "Must enter commit comment"
+else
+ git add .
+ git commit -m "$1"
+ git push
+ cap deploy
+fi
