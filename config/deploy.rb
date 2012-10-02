@@ -8,9 +8,9 @@
 #---
 require 'bundler/capistrano'
 # be sure to change these
-set :user, 'swagshack'
-set :domain, 'spruce.dreamhost.com'
-set :application, 'sparks'
+set :user, 'jgjerset'
+set :domain, 'ub1.aceparking.com'
+set :application, 'swagshack'
 
 # adjust if you are using RVM, remove if you are not
 require "rvm/capistrano"
