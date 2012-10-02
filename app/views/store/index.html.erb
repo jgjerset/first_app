@@ -1,0 +1,24 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<div id="store-layout">
+  <div id="header">
+    <p>Store Header</p>
+  </div>
+
+
+<% @products.each do |product| %>
+  <div class="entry">
+    <h3><%= product.title %></h3>
+    <div class="img-frame"><%= image_tag(product.image_url) %></div>
+    <div class="description"><p><%= sanitize(product.description) %></p></div>
+    <div class="price_line">
+      <span class="price"> <a href="http://www.amazon.com/?tag=404e-20"><%= product.source %></a> <%= number_to_currency(product.price) %></span>
+    </div>  
+  </div>
+<% end %>
+
+
+
+</div>  <!--- store --->
