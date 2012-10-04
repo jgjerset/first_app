@@ -16,13 +16,18 @@
 </p>
 
 <p>
+  <b>Product Url:</b>
+  <%= @product.url %>
+</p>
+
+<p>
   <b>Image url:</b>
   <%= @product.image_url %>
 </p>
 
 <p>
   <b>Price:</b>
-  <%= @product.price %>
+  <%= number_to_currency(@product.price) %>
 </p>
 
 <p>

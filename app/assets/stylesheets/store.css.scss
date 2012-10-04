@@ -2,10 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#store-layout {
+.store {
     width: 1124px;
     margin: 0 auto;
+   
+    .header {
+      width: 900px;
+      height: 150px;
+      background-image:image-url("logo.jpg");
+    }  
+
 }
+
+
 
 .left {
     float: left;

@@ -2,9 +2,8 @@
   <p id="notice"><%= notice %></p>
 <% end %>
 
-<div id="store-layout">
-  <div id="header">
-    <p>Get your Booty here!</p>
+  <div class="header">
+    <p> </p>
   </div>
 
 
@@ -14,11 +13,11 @@
     <div class="img-frame"><%= image_tag(product.image_url) %></div>
     <div class="description"><p><%= sanitize(product.description) %></p></div>
     <div class="price_line">
-      <span class="price"> <a href="http://www.amazon.com/?tag=404e-20"><%= product.source %></a> <%= number_to_currency(product.price) %></span>
+      <span class="price"> <a href="<%= product.url %>"><%= product.source %></a> <%= number_to_currency(product.price) %></span>
     </div>  
   </div>
 <% end %>
 
 
 
-</div>  <!--- store --->
+
