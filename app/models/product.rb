@@ -8,7 +8,7 @@ class Product < ActiveRecord::Base
     message: 'must be a URL for GIV, JPG or PNG image'
   }
   
-  has_attached_file :photo, :styles => { :thumb => ["32x32#", :png] },
-      :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
-      :url => "/system/:attachment/:id/:style/:filename"
+  has_attached_file :photo
+  
+
 end
