@@ -42,4 +42,5 @@ gem 'capistrano'
 # gem 'debugger'
 
 gem 'paperclip', '~> 3.1'
+
 gem 'rmagick'
