@@ -10,7 +10,7 @@
 <% @products.each do |product| %>
   <div class="entry">
     <h3><%= product.title %></h3>
-    <div class="img-frame"><%= image_tag(product.image_url) %></div>
+    <div class="img-frame"><%= image_tag(product.photo.url) %></div>
     <div class="description"><p><%= sanitize(product.description) %></p></div>
     <div class="price_line">
       <span class="price"> <a href="<%= product.url %>"><%= product.source %></a> <%= number_to_currency(product.price) %></span>
