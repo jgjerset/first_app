@@ -44,3 +44,5 @@ gem 'capistrano'
 gem 'paperclip', '~> 3.1'
 
 gem 'rmagick'
+
+gem 'cocaine', '~> 0.3'
