@@ -23,7 +23,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+ 
+ 
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -45,4 +46,4 @@ gem 'paperclip', '~> 3.1'
 
 gem 'rmagick'
 
-gem 'cocaine', '~> 0.3'
+
