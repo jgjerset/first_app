@@ -131,7 +131,6 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   capistrano
-  cocaine (~> 0.3)
   coffee-rails (~> 3.2.1)
   jquery-rails
   mysql2
