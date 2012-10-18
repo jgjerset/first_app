@@ -38,6 +38,7 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Deploy with Capistrano
 gem 'capistrano'
+gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'
@@ -46,4 +47,14 @@ gem 'paperclip', '~> 3.1'
 
 gem 'rmagick'
 
-
+group :development, :test do
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-rspec"
+  gem 'rb-inotify', '~> 0.8.8'
+  gem 'launchy'
+  gem 'guard-spork'
+  gem 'spork-testunit'
+  gem 'spork'
+end
