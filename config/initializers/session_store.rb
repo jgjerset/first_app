@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-SwagShack::Application.config.session_store :cookie_store, key: '_sparks_session'
+SwagShack::Application.config.session_store :cookie_store, key: '_swagshack_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
